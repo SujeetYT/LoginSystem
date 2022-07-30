@@ -1,0 +1,29 @@
+{
+  "name": "mikhvisiondigisolutions",
+  "version": "1.0.0",
+  "description": "Internshala Assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SujeetYT/MikhvisionDigiSolutions.git"
+  },
+  "keywords": [
+    "Assignment",
+    "Internshala",
+    "Backend",
+    "JWT",
+    "LOGIN",
+    "SYSTEM",
+    "SIGNUP",
+    "SYSTEM"
+  ],
+  "author": "Sujeet Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SujeetYT/MikhvisionDigiSolutions/issues"
+  },
+  "homepage": "https://github.com/SujeetYT/MikhvisionDigiSolutions#readme"
+}
