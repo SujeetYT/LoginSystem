@@ -16,18 +16,6 @@ const signUpSchema = new mongoose.Schema({
     }
 });
 
-// const loginSchema = new mongoose.Schema({
-//     email : {
-//         type : String,
-//         required : true
-//     },
-//     password : {
-//         type : String,
-//         required : true
-//     }
-// });
-
-// const loginModel = mongoose.model("loginModel", loginSchema);
 const signUpModel = mongoose.model("signUpModel", signUpSchema);
 
 module.exports = signUpModel;

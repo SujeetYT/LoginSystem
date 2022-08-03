@@ -48,3 +48,34 @@ body{
 .loginBox input[type=submit]:active{
     background-color: #ca5100;
 }
+.overlay{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #505050c7;
+    z-index: 4;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.messageBox{
+    position: absolute;
+    min-width: 250px;
+    height:  150px;
+    border: 1px solid #ff6702;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:  10px;
+    background-color: #f7f7f7;
+    z-index: 5;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.messageBox h2{
+    margin: 5px 0;
+    color: #ff6702;
+}

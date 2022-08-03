@@ -11,16 +11,21 @@ exports.signup = async (req, res)=>{
 
         signUpData.save().then(()=>{
             return res.status(201).json({
-                message : "Signup Success !"
+                message : "Signup Success !",
+                status : 201
             });
         }).catch((err)=>{
             console.log(err.message);
-            res.send(err.message);
+            res.json({
+                message : "Email already exists",
+                status : 409
+            });
         })
     }else{
         res.json({
-            message : "Password do not match"
-        });
+            message : "Password do not match",
+            status : 401
+        }).status(401);
     }
 }
 
@@ -33,16 +38,19 @@ exports.login = async (req,res)=>{
         if(correctPassword){
             res.json({
                 message : "Logged in",
-                name : user.name
+                name : user.name,
+                status : 201
             }).status(201);
         }else{
             res.json({
-                message : "Incorrect Password"
-            }).status(400);
+                message : "Incorrect Password",
+                status : 403
+            }).status(403);
         }
     }else{
         res.json({
-            message : "User Not Found"
+            message : "User Not Found",
+            status : 400
         }).status(400);
     }
 }
