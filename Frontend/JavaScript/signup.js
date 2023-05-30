@@ -6,7 +6,7 @@ form.addEventListener('submit', async (e)=>{
     e.preventDefault();
     const formData = new FormData(form);
     const payload = new URLSearchParams(formData);
-    const result = await fetch('http://localhost:3000/signup', {
+    const result = await fetch('https://loginsystem-v431.onrender.com/signup', {
         method : 'post',
         body : payload
     });
