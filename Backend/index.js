@@ -19,5 +19,5 @@ app.post("/signup", signup);
 app.post("/login", login);
 
 app.listen(PORT, ()=>{
-    console.log(`App running on http://localhost:3000`);
+    console.log(`App running on http://localhost:${PORT}`);
 })
